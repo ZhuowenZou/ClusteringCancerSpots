@@ -129,7 +129,7 @@ def plot_chart(folder, filenames, epsilons, clst_stats):
         epsilon = epsilons[i]
 
         worksheet = workbook.add_worksheet("Epsilon = %.3f" % epsilon)
-        worksheet.set_column('A:A', 12)
+        worksheet.set_column('A:Z', 12)
 
         stats = clst_stats[:, i]
         height = max([len(clst) for clst in stats])
